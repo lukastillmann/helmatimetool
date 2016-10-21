@@ -1,0 +1,11 @@
+_extends = Guide
+_children = users.tasks
+_children.accessname = name
+name
+
+_parent = root.users
+
+_db = lukas
+_table = my_tasks
+_id = id
+

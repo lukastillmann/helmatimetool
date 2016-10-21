@@ -1,0 +1,29 @@
+				<div class="navbar-default sidebar" role="navigation">
+					<div class="sidebar-nav navbar-collapse">
+						<ul class="nav in" id="side-menu">
+							<li>
+								<a href="main" class="active">
+									<i class="fa fa-dashboard fa-fw"></i>
+									Timetool
+								</a>
+							</li>
+							<li>
+								<a href="#" class="">
+									<i class="fa fa-wrench fa-fw"></i>
+									Admin Settings
+									<span class="fa arrow"></span>
+								</a>
+								<ul class="nav nav-second-level collapse in" aria-expanded="false" style="height: 0px;">
+									<li>
+										<a href="adminsettings">Projekte</a>
+									</li>
+									<li>
+										<a href="tasktypesettings">Tätigkeiten</a>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+

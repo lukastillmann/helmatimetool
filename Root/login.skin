@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="col-lg-12">
+			<div class="loginForm">
+				<div class="loginForm-header">
+					<h1 class="loginForm-h1">Login</h1>
+				</div> 
+				 <form action="login" method="POST">
+					<div class="loginForm-group">      
+						<input class="loginForm-input type="text" name="username" required>
+						<span class="loginForm-highlight"></span>
+						<span class="loginForm-bar"></span>
+						<label class="loginForm-label">Username</label>
+					</div>
+					<div class="loginForm-group">      
+						<input class="loginForm-input" type="password" name="password" required>
+						<span class="loginForm-highlight"></span>
+						<span class="loginForm-bar"></span>
+						<label class="loginForm-label">Password</label>
+					</div>
+					<input class="loginForm-button" type="submit" name="login" value="Login"></input>
+				</form>
+				<div class="loginForm-footerbox">
+					<p class="loginForm-footertext">Kein Benutzername? <a href="register" class="loginForm-signup">Hier anmelden</span></p>
+				</div>
+			</div>
+		</div>
+</div>

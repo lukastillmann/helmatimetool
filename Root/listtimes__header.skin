@@ -1,0 +1,19 @@
+<div class="listtimes__wrapper">
+	<div class="listtimes__header">
+		<div class="row">
+			<div class="col-xs-8">
+				<div class="listtimes__day">
+					<input type="checkbox" id="<% param.dayid %>" class="listtimes__check listtimes__check--day">
+					<label for="<% param.dayid %>"></label>
+					<div class="listtimes__daytext">
+						<% param.header %>
+					</div>
+				</div>
+			</div>
+		<div class="col-xs-4 text-right">
+			<div class="listtimes__daytime">
+			<% param.durationday %>
+			</div>
+		</div>
+	</div>
+</div>

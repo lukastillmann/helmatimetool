@@ -1,0 +1,99 @@
+<div class="addtimes">
+	<div class="addtimes__top">
+		<div class="row">
+			<div class="col-md-9 col-xs-6">
+				<h2 class="addtimes__actiontext">Woran arbeitest Du gerade?</h2>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="addtimes__icon">
+							<i class="fa fa-clock-o fa-3x"></i>
+						</div>
+					</div>
+					<div class="col-xs-8">
+						<div class="addtimes__today">
+							Heute
+						</div>
+						<div class="addtimes__timetoday">
+							<% this.getTodaysDuration %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="addtimes__bottom">
+		<form method="POST" action="main" name="main">
+			<div class="row no-gutter">
+				<div class="col-lg-4 col-xs-12">
+					<div class="addtimes__input">
+						<input type="text" name="name" class="addtimes__input addtimes__input--name form-control" placeholder="Beschreibung" autofocus>
+					</div>
+				</div>
+				<div class="col-lg-3 col-xs-12">
+					<div>
+						<select name="projectid" class="addtimes__input attimes__input--project form-control selectpicker" required>
+							<option value="">Projekt auswählen</option>
+							<% this.addTimesForm part="projects" %>
+						</select>
+					</div>
+				</div>
+				<div class="col-lg-2 col-xs-6">
+					<div>
+						<select name="typeid" class="addtimes__input addtimes__input--type form-control selectpicke selectpicker" required>
+							<option value="">Tätigkeit auswählen</option>
+							<% this.addTimesForm part="type" %>
+						</select>
+					</div>
+				</div>
+				<div class="col-lg-1 col-xs-3">
+					<div>
+						<input type="text" name="day" class="addtimes__input addtimes__input--day form-control datepicker" placeholder="Tag" data-provide="datepicker" value="<% this.getDay %>">
+					</div>
+				</div>
+				<div class="col-lg-1 col-xs-3">
+					<div>
+						<input type="text" name="time" class="addtimes__input addtimes__input--time form-control timepicker" placeholder="Zeit">
+					</div>
+				</div>
+				<div class="col-lg-1 col-xs-12">
+					<input type="submit" name="submit" value="Start" class="addtimes__button btn btn-primary btn.block">
+				</div>
+			</div>
+		</form>
+		<div class="addtimes__shortcuts">
+			<div class="row">
+				<div class="col-xs-12 text-right">
+					<a href="actions?action=leavenow" class="addtimes__text addtimes__text--shortcuts">Leave now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="listtimes">
+	<div class="listtimes__actions">
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="listtimes__actionselect form-inline">
+					<form method="POST" action="actions" name="actions">
+						<select class="listtimes__select listtimes__select--actions form-control">
+							<option value="null">Actions</option>
+							<option value="bulkdelete">Löschen</option>
+						</select>
+						<input type="submit" name="submit" value="Ok" class="listtimes__button btn btn-primary btn.block">
+					</form>
+				</div>
+			</div>
+			<div class="col-xs-6 text-right">
+				<div class="listtimes__timesselect form-inline">
+					<select class="listtimes__select listtimes__select--actions form-control">
+						<option>Zeit auswählen</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<% this.listTimes%>
+</div>

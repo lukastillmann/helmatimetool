@@ -1,0 +1,5 @@
+<form action="<% this.href action="register" %>" method="POST"> 
+  name: <input type="text" name="username"><br /> 
+  pass: <input type="password" name="password"><br /> 
+  <input type="submit" name="login" value="Register!"> 
+</form> 

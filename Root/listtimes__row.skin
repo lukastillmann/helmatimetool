@@ -1,0 +1,41 @@
+<div class="listtimes__row">
+	<div class="row">
+		<div class="col-xs-3 col-md-2 col-lg-2">
+			<div class="listtimes__time">
+				<input type="checkbox" id="listtimes__check--<% param.timeid %>" class="listtimes__check listtimes__check--time listtimes__check--<% param.dayid%>">
+				<label for="listtimes__check--<% param.timeid %>"></label>
+				<div class="listtimes__text listtimes__text--time text-right">
+					<% param.time %>	
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-7 col-md-4 col-lg-4">
+			<div class="listtimes__text">
+				<% param.description %>	
+			</div>
+		</div>
+		<div class="col-xs-2 col-md-1 col-lg-1 text-right">
+			<a href="<% param.editlink %>" class="listtimes__text listtimes__text--icons listtimes__text--editlink">
+				<i class="fa fa-pencil" aria-hidden="true"></i>
+			</a>
+			<a href="<% param.removelink %>" class="listtimes__text listtimes__text--icons listtimes__text--removelink">
+				<i class="fa fa-trash" aria-hidden="true"></i>
+			</a>
+		</div>
+		<div class="col-xs-7 col-xs-offset-3 col-md-3 col-md-offset-0 col-lg-3">
+			<div class="listtimes__text listtimes__text--small">
+				<% param.project %>
+			</div>
+		</div>
+		<div class="col-xs-7 col-xs-offset-3 col-md-1 col-md-offset-0">
+			<div class="listtimes__text listtimes__text--small listtimes__text--gray">
+				<% param.type %>
+			</div>
+		</div>
+		<div class="col-xs-2 col-md-1 text-right">
+			<div class="listtimes__text listtimes__text--small listtimes__text--gray">
+				<% param.duration %>
+			</div>
+		</div>
+	</div>
+</div>

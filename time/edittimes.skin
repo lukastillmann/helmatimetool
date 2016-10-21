@@ -1,0 +1,50 @@
+<form method="POST" action="time/<%param.id%>/edittime" name="today">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="editmeLabel">Modal title</h4>
+	</div>
+	<div class="modal-body">
+		<div class="addtimes">
+			<div class="addtimes__bottom">
+					<div class="row no-gutter">
+						<div class="col-lg-5 col-xs-12">
+							<div class="addtimes__input">
+								<input type="text" name="name" class="addtimes__input addtimes__input--name form-control" placeholder="Beschreibung" autofocus value="<% this.name %>">
+							</div>
+						</div>
+						<div class="col-lg-3 col-xs-12">
+							<div>
+								<select name="projectid" class="addtimes__input attimes__input--project form-control selectpicker-edit" required>
+									<option value="">Projekt auswählen</option>
+									<% root.addTimesForm part="projects" value=<%this.projectid%>%>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-2 col-xs-6">
+							<div>
+								<select name="typeid" class="addtimes__input addtimes__input--type form-control selectpicke selectpicker">
+									<% root.addTimesForm part="type" value=<%this.typeid%>%>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-1 col-xs-3">
+							<div>
+								<input type="text" name="day" class="addtimes__input addtimes__input--day form-control datepicker" placeholder="Tag" data-provide="datepicker" value="<% root.getDay value=<%this.day%> %>">
+							</div>
+							</div>
+						<div class="col-lg-1 col-xs-3">
+							<div>
+								<input type="text" name="time" class="addtimes__input addtimes__input--time form-control timepicker" placeholder="Zeit" value="<%root.getTime value=<%this.time%>%>">
+							</div>
+						</div>
+						<div class="col-lg-1 col-xs-12">
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+		<input type="submit" name="submit" value="Speichern" class="edittimes__button btn btn-primary btn">
+	</div>
+</form>
