@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><% param.title %></title>
     <!-- Bootstrap -->
-    <link href="https://webmark.manova.at/static/helma_lukas/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/helma_lukas/css/bootstrap.min.css" rel="stylesheet">
 		<!-- MetisMenu CSS -->
-		<link href="https://webmark.manova.at/static/helma_lukas/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+		<link href="/static/helma_lukas/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 		<!-- Custom Fonts -->
-		<link href="https://webmark.manova.at/static/helma_lukas/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="/static/helma_lukas/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<! -- Bootstrap Datepicker -->
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
 		<!-- jquery-timepicker -->
@@ -19,8 +19,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
 
 		<! -- Theme -->
-		<link href="https://webmark.manova.at/static/helma_lukas/vendor/sb-admin-2.css" rel="stylesheet">
-    <link rel="Stylesheet" href="https://webmark.manova.at/static/helma_lukas/style.css">
+		<link href="/static/helma_lukas/vendor/sb-admin-2.css" rel="stylesheet">
+	 <link rel="Stylesheet" href="/static/helma_lukas/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -78,10 +78,10 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="https://webmark.manova.at/static/helma_lukas/js/bootstrap.min.js"></script>
+		<script src="/static/helma_lukas/js/bootstrap.min.js"></script>
 
 		<!-- Metis Menu Plugin JavaScript -->
-		<script src="https://webmark.manova.at/static/helma_lukas/vendor/metisMenu/metisMenu.min.js"></script>
+		<script src="/static/helma_lukas/vendor/metisMenu/metisMenu.min.js"></script>
 		<!-- Bootstrap Datepicker -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
 		<!-- jquery timepicker -->
@@ -90,6 +90,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
 
 		<!-- custom js -->
-		<script src="https://webmark.manova.at/static/helma_lukas/js/functions.js"></script>
+		<script src="/static/helma_lukas/js/functions.js"></script>
   </body>
 </html>
