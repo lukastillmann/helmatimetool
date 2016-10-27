@@ -27,16 +27,17 @@ function listTimes_macro() {
 	var time;
 	var day;
 	var timeslist = root.user.get(session.user.name).days;
+	var durations = {}
+	var durationsDay = {};
 
 	/* get duration from sql statement */
 	var db = getDBConnection('lukas');
-	var dbRowset = db.executeRetrieval('select id,extract(epoch from ((lead(my_begintime) over (order by my_begintime asc)) - my_begintime))/60 as "duration" from my_times;');
-	var durations = {}
-	var durationsDay = {};
+	var dbRowset = db.executeRetrieval('select id,extract(epoch from ((lead(my_begintime) over (partition by my_day order by my_begintime asc)) - my_begintime))/60 as "duration", extract ( epoch from (( my_day + interval \'1\' day) - my_begintime))/60  as "end of day" from my_times;');
 	while (dbRowset.next()) {
-		durations[dbRowset.getColumnItem("id")] = dbRowset.getColumnItem("duration");
+		durations[dbRowset.getColumnItem("id")] = dbRowset.getColumnItem("duration");	
 	}
-	dbRowset = db.executeRetrieval('select my_day, sum(duration) from (select id, name, my_day, my_begintime, extract(epoch from ((lead(my_begintime) over (order by my_begintime asc)) - my_begintime))/60 as "duration" from my_times) as durations group by my_day;');
+	/* get duration by day */
+	dbRowset = db.executeRetrieval('select my_day, sum(duration) from (select id, name, my_day, my_begintime, extract(epoch from ((lead(my_begintime) over (partition by my_day order by my_begintime asc)) - my_begintime))/60 as "duration" from my_times) as durations group by my_day;');
 	while (dbRowset.next()) {
 		durationsDay[dbRowset.getColumnItem("my_day")] =  dbRowset.getColumnItem("sum");
 		dbg(dbRowset.getColumnItem("my_day"));
