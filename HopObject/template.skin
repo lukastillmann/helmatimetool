@@ -83,7 +83,7 @@
 		<!-- Metis Menu Plugin JavaScript -->
 		<script src="/static/helma_lukas/vendor/metisMenu/metisMenu.min.js"></script>
 		<!-- Bootstrap Datepicker -->
-		<script src="/static/helma_lukas/vendor/bootstrap-datepickerbootstrap-datepicker.min.js"></script>
+		<script src="/static/helma_lukas/vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 		<!-- jquery timepicker -->
 		<script type="text/javascript" src="/static/helma_lukas/vendor/jquery-timepicker/jquery.timepicker.min.js"></script>
 		<!-- bootstrap-select -->
