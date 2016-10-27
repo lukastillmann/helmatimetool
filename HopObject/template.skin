@@ -87,7 +87,7 @@
 		<!-- jquery timepicker -->
 		<script type="text/javascript" src="/static/helma_lukas/vendor/jquery-timepicker/jquery.timepicker.min.js"></script>
 		<!-- bootstrap-select -->
-		<script src="static/helma_lukas/vendor/bootstrap-select/bootstrap-select.min.js"></script>
+		<script src="/static/helma_lukas/vendor/bootstrap-select/bootstrap-select.min.js"></script>
 
 		<!-- custom js -->
 		<script src="/static/helma_lukas/js/functions.js"></script>
