@@ -12,11 +12,11 @@
 		<!-- Custom Fonts -->
 		<link href="/static/helma_lukas/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<! -- Bootstrap Datepicker -->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+		<link href="/static/helma_lukas/vendor/bootstrap-datepicker/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
 		<!-- jquery-timepicker -->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css" rel="stylesheet" type="text/css">
+		<link href="/static/helma_lukas/vendor/jquery-timepicker/jquery.timepicker.min.css" rel="stylesheet" type="text/css">
 		<!-- Bootstrap-select -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="/static/helma_lukas/vendor/bootstrap-select/bootstrap-select.min.css">
 
 		<! -- Theme -->
 		<link href="/static/helma_lukas/vendor/sb-admin-2.css" rel="stylesheet">
@@ -76,18 +76,18 @@
 
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="/static/helma_lukas/vendor/jquery/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="/static/helma_lukas/js/bootstrap.min.js"></script>
 
 		<!-- Metis Menu Plugin JavaScript -->
 		<script src="/static/helma_lukas/vendor/metisMenu/metisMenu.min.js"></script>
 		<!-- Bootstrap Datepicker -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+		<script src="/static/helma_lukas/vendor/bootstrap-datepickerbootstrap-datepicker.min.js"></script>
 		<!-- jquery timepicker -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+		<script type="text/javascript" src="/static/helma_lukas/vendor/jquery-timepicker/jquery.timepicker.min.js"></script>
 		<!-- bootstrap-select -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+		<script src="static/helma_lukas/vendor/bootstrap-select/bootstrap-select.min.js"></script>
 
 		<!-- custom js -->
 		<script src="/static/helma_lukas/js/functions.js"></script>
