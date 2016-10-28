@@ -9,11 +9,15 @@ function tmpl(content) {
 }
 
 function sideBar_macro(param) {
-	dbg(param);
-	dbg(param.fullscreen);
 	if (param.fullscreen == "fullscreen" ) {
 		return;
 	} else {
 		this.renderSkin("sidebar");
 	}
+}
+
+function navbar_macro(param) {
+	var out = '';
+	out += this.renderSkinAsString('navbar');
+	res.write(out);
 }
