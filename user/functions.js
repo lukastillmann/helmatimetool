@@ -7,7 +7,6 @@ function constructor(user,password) {
 function test_action() {
 	this.times.invalidate();
 	res.write(this.times.list().length + '<br>');
-	dbg(root.user.list());
 }
 
 function xxx_action() {

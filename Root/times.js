@@ -40,9 +40,7 @@ function listTimes_macro() {
 	dbRowset = db.executeRetrieval('select my_day, sum(duration) from (select id, name, my_day, my_begintime, extract(epoch from ((lead(my_begintime) over (partition by my_day order by my_begintime asc)) - my_begintime))/60 as "duration" from my_times) as durations group by my_day;');
 	while (dbRowset.next()) {
 		durationsDay[dbRowset.getColumnItem("my_day")] =  dbRowset.getColumnItem("sum");
-		dbg(dbRowset.getColumnItem("my_day"));
 	}
-	dbg(durationsDay.toSource());
 
 
 	/* params needed */
@@ -81,7 +79,6 @@ function listTimes_macro() {
 			params.duration = this.getDurationsIntervalFromMinutes(durations[time._id]);
 			
 			out += this.renderSkinAsString('listtimes__row', params);
-			// dbg('time', timeslist[key][i]);
 		}
 		out += '</div>';
 		out += '</div>';
@@ -93,8 +90,6 @@ function addTimesForm_macro(param) {
 	var list;
 	var out = '';
 	var value = param.value;
-	dbg('part= ' + param.part);
-	dbg('value= ' + param.value);
 
 	switch (param.part) {
 		case 'projects' :

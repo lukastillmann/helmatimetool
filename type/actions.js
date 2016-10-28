@@ -8,7 +8,6 @@ function test_action() {
 }
 
 function removeme_action() {
-	dbg(this.id);
   if (this.time.size() > 0) {
 		res.write(this.name + ' kann nicht entfernt werden. Das Projekt enthält gültige Zeiten.')
 	} else {
