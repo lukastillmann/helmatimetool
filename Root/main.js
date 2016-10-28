@@ -57,7 +57,8 @@ function login_action() {
 	var content = {};
 	content.body = this.renderSkinAsString("login");
 	content.fullscreen = "fullscreen";
-	this.tmpl(content);
+	this.renderSkin("login", {title: 'Helma Timetool'} );
+	// this.tmpl(content);
 }
 
 function logout_action() {
